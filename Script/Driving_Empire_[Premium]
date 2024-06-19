@@ -1,1 +1,1749 @@
+-- print("x1Zpell NO 1")
 
+--------------------------- [[ Whitlist Checkers ]] ---------------------------
+
+local testing = true
+
+if testing == false then
+    -- if not _G.Load then
+    --     _G.Load = true
+    -- else
+    --     return
+    -- end
+
+    spawn(function()
+        if _SnowFlake_ == nil then
+            return
+        end
+        local success,err = pcall(function()
+            if PASSMOOD ~= nil then
+                repeat wait() until false
+            end
+            repeat wait() until game:GetService("ReplicatedStorage"):FindFirstChild(_SnowFlake_)
+            local BackupData = game:GetService("ReplicatedStorage")[_SnowFlake_].Value
+            wait()
+            game:GetService("ReplicatedStorage")[_SnowFlake_]:Destroy()
+            local hash = function(a)local b={[0]={"00","\0"},[1]={"01","\1"},[2]={"02","\2"},[3]={"03","\3"},[4]={"04","\4"},[5]={"05","\5"},[6]={"06","\6"},[7]={"07","\7"},[8]={"08","\8"},[9]={"09","\9"},[10]={"0a","\10"},[11]={"0b","\11"},[12]={"0c","\12"},[13]={"0d","\13"},[14]={"0e","\14"},[15]={"0f","\15"},[16]={"10","\16"},[17]={"11","\17"},[18]={"12","\18"},[19]={"13","\19"},[20]={"14","\20"},[21]={"15","\21"},[22]={"16","\22"},[23]={"17","\23"},[24]={"18","\24"},[25]={"19","\25"},[26]={"1a","\26"},[27]={"1b","\27"},[28]={"1c","\28"},[29]={"1d","\29"},[30]={"1e","\30"},[31]={"1f","\31"},[32]={"20","\32"},[33]={"21","\33"},[34]={"22","\34"},[35]={"23","\35"},[36]={"24","\36"},[37]={"25","\37"},[38]={"26","\38"},[39]={"27","\39"},[40]={"28","\40"},[41]={"29","\41"},[42]={"2a","\42"},[43]={"2b","\43"},[44]={"2c","\44"},[45]={"2d","\45"},[46]={"2e","\46"},[47]={"2f","\47"},[48]={"30","\48"},[49]={"31","\49"},[50]={"32","\50"},[51]={"33","\51"},[52]={"34","\52"},[53]={"35","\53"},[54]={"36","\54"},[55]={"37","\55"},[56]={"38","\56"},[57]={"39","\57"},[58]={"3a","\58"},[59]={"3b","\59"},[60]={"3c","\60"},[61]={"3d","\61"},[62]={"3e","\62"},[63]={"3f","\63"},[64]={"40","\64"},[65]={"41","\65"},[66]={"42","\66"},[67]={"43","\67"},[68]={"44","\68"},[69]={"45","\69"},[70]={"46","\70"},[71]={"47","\71"},[72]={"48","\72"},[73]={"49","\73"},[74]={"4a","\74"},[75]={"4b","\75"},[76]={"4c","\76"},[77]={"4d","\77"},[78]={"4e","\78"},[79]={"4f","\79"},[80]={"50","\80"},[81]={"51","\81"},[82]={"52","\82"},[83]={"53","\83"},[84]={"54","\84"},[85]={"55","\85"},[86]={"56","\86"},[87]={"57","\87"},[88]={"58","\88"},[89]={"59","\89"},[90]={"5a","\90"},[91]={"5b","\91"},[92]={"5c","\92"},[93]={"5d","\93"},[94]={"5e","\94"},[95]={"5f","\95"},[96]={"60","\96"},[97]={"61","\97"},[98]={"62","\98"},[99]={"63","\99"},[100]={"64","\100"},[101]={"65","\101"},[102]={"66","\102"},[103]={"67","\103"},[104]={"68","\104"},[105]={"69","\105"},[106]={"6a","\106"},[107]={"6b","\107"},[108]={"6c","\108"},[109]={"6d","\109"},[110]={"6e","\110"},[111]={"6f","\111"},[112]={"70","\112"},[113]={"71","\113"},[114]={"72","\114"},[115]={"73","\115"},[116]={"74","\116"},[117]={"75","\117"},[118]={"76","\118"},[119]={"77","\119"},[120]={"78","\120"},[121]={"79","\121"},[122]={"7a","\122"},[123]={"7b","\123"},[124]={"7c","\124"},[125]={"7d","\125"},[126]={"7e","\126"},[127]={"7f","\127"},[128]={"80","\128"},[129]={"81","\129"},[130]={"82","\130"},[131]={"83","\131"},[132]={"84","\132"},[133]={"85","\133"},[134]={"86","\134"},[135]={"87","\135"},[136]={"88","\136"},[137]={"89","\137"},[138]={"8a","\138"},[139]={"8b","\139"},[140]={"8c","\140"},[141]={"8d","\141"},[142]={"8e","\142"},[143]={"8f","\143"},[144]={"90","\144"},[145]={"91","\145"},[146]={"92","\146"},[147]={"93","\147"},[148]={"94","\148"},[149]={"95","\149"},[150]={"96","\150"},[151]={"97","\151"},[152]={"98","\152"},[153]={"99","\153"},[154]={"9a","\154"},[155]={"9b","\155"},[156]={"9c","\156"},[157]={"9d","\157"},[158]={"9e","\158"},[159]={"9f","\159"},[160]={"a0","\160"},[161]={"a1","\161"},[162]={"a2","\162"},[163]={"a3","\163"},[164]={"a4","\164"},[165]={"a5","\165"},[166]={"a6","\166"},[167]={"a7","\167"},[168]={"a8","\168"},[169]={"a9","\169"},[170]={"aa","\170"},[171]={"ab","\171"},[172]={"ac","\172"},[173]={"ad","\173"},[174]={"ae","\174"},[175]={"af","\175"},[176]={"b0","\176"},[177]={"b1","\177"},[178]={"b2","\178"},[179]={"b3","\179"},[180]={"b4","\180"},[181]={"b5","\181"},[182]={"b6","\182"},[183]={"b7","\183"},[184]={"b8","\184"},[185]={"b9","\185"},[186]={"ba","\186"},[187]={"bb","\187"},[188]={"bc","\188"},[189]={"bd","\189"},[190]={"be","\190"},[191]={"bf","\191"},[192]={"c0","\192"},[193]={"c1","\193"},[194]={"c2","\194"},[195]={"c3","\195"},[196]={"c4","\196"},[197]={"c5","\197"},[198]={"c6","\198"},[199]={"c7","\199"},[200]={"c8","\200"},[201]={"c9","\201"},[202]={"ca","\202"},[203]={"cb","\203"},[204]={"cc","\204"},[205]={"cd","\205"},[206]={"ce","\206"},[207]={"cf","\207"},[208]={"d0","\208"},[209]={"d1","\209"},[210]={"d2","\210"},[211]={"d3","\211"},[212]={"d4","\212"},[213]={"d5","\213"},[214]={"d6","\214"},[215]={"d7","\215"},[216]={"d8","\216"},[217]={"d9","\217"},[218]={"da","\218"},[219]={"db","\219"},[220]={"dc","\220"},[221]={"dd","\221"},[222]={"de","\222"},[223]={"df","\223"},[224]={"e0","\224"},[225]={"e1","\225"},[226]={"e2","\226"},[227]={"e3","\227"},[228]={"e4","\228"},[229]={"e5","\229"},[230]={"e6","\230"},[231]={"e7","\231"},[232]={"e8","\232"},[233]={"e9","\233"},[234]={"ea","\234"},[235]={"eb","\235"},[236]={"ec","\236"},[237]={"ed","\237"},[238]={"ee","\238"},[239]={"ef","\239"},[240]={"f0","\240"},[241]={"f1","\241"},[242]={"f2","\242"},[243]={"f3","\243"},[244]={"f4","\244"},[245]={"f5","\245"},[246]={"f6","\246"},[247]={"f7","\247"},[248]={"f8","\248"},[249]={"f9","\249"},[250]={"fa","\250"},[251]={"fb","\251"},[252]={"fc","\252"},[253]={"fd","\253"},[254]={"fe","\254"},[255]={"ff","\255"}}local c,d,e,f,g=bit32.band,bit32.rrotate,bit32.bxor,bit32.rshift,bit32.bnot;local string,assert=string,assert;local h={0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2}local function i(j,k)local l=""local m=""for n=1,k do local o=j%256;l=b[o][2]..l;m=b[o][1]..m;j=(j-o)/256 end;return m,l end;local function p(q,n)local k=0;for n=n,n+3 do k=k*256+string.byte(q,n)end;return k end;local function r(s,t)local u=-(t+1+8)%64;_,t=i(8*t,8)tlen=""s=s.."\128"..string.rep("\0",u)..t;assert(#s%64==0)return s end;local function v(w)w[1]=0x6a09e667;w[2]=0xbb67ae85;w[3]=0x3c6ef372;w[4]=0xa54ff53a;w[5]=0x510e527f;w[6]=0x9b05688c;w[7]=0x1f83d9ab;w[8]=0x5be0cd19;return w end;local function x(s,n,w)local y={}for z=1,16 do y[z]=p(s,n+(z-1)*4)end;for z=17,64 do local A=y[z-15]local B=e(d(A,7),d(A,18),f(A,3))A=y[z-2]local l=e(d(A,17),d(A,19),f(A,10))y[z]=y[z-16]+B+y[z-7]+l end;local C,D,E,F,G,H,I,J=w[1],w[2],w[3],w[4],w[5],w[6],w[7],w[8]for n=1,64 do local B=e(d(C,2),d(C,13),d(C,22))local K=e(c(C,D),c(C,E),c(D,E))local L=B+K;local l=e(d(G,6),d(G,11),d(G,25))local M=e(c(G,H),c(g(G),I))local N=J+l+M+h[n]+y[n]J=I;I=H;H=G;G=F+N;F=E;E=D;D=C;C=N+L end;w[1]=c(w[1]+C)w[2]=c(w[2]+D)w[3]=c(w[3]+E)w[4]=c(w[4]+F)w[5]=c(w[5]+G)w[6]=c(w[6]+H)w[7]=c(w[7]+I)w[8]=c(w[8]+J)end;local function O(w)return i(w[1],4)..i(w[2],4)..i(w[3],4)..i(w[4],4)..i(w[5],4)..i(w[6],4)..i(w[7],4)..i(w[8],4)end;local P={}local function Q(s)s=r(s,#s)local w=v(P)for n=1,#s,64 do x(s,n,w)end;return O(w)end;return Q(a)end
+            local EQ = function (a,b)
+                if 1 == 1 then
+                    if type(a) == type(b) and type(b) == type(a) then
+                        if typeof(a) == typeof(b) then
+                            if a == b and b == a then
+                                if 1 == 2 then warn("EQ ERR") end
+                                return true
+                            else
+                                if 2 == 1 then warn("EQ ERR") end
+                                return false
+                            end
+                        else
+                            if 2 == 3 then warn("EQ ERR") end
+                            return false
+                        end
+                    else
+                        if 69 ~= 69 then warn("EQ ERR") end
+                        return false
+                    end
+                else
+                    warn("EQ ERR")
+                end
+            end
+            -- print(BackupData)
+            -- print(_SnowFlake_ .. 'request' .. _SnowFlake_ .. 'table.foreach' .. _SnowFlake_ .. 'FindFirstChild' .. _G.Key  .. "DrivingEmpireNextGeneration")
+            -- warn(BackupData == _SnowFlake_ .. 'request' .. _SnowFlake_ .. 'table.foreach' .. _SnowFlake_ .. 'FindFirstChild' .. _G.Key  .. "DrivingEmpireNextGeneration")
+            if EQ(BackupData, _SnowFlake_ .. 'request' .. _SnowFlake_ .. 'table.foreach' .. _SnowFlake_ .. 'FindFirstChild' .. _G.Key  .. "DrivingEmpireNextGeneration") then
+                _SnowFlake_ = nil
+                getgenv().PASSMOOD = "HOOK HOOK"
+            end
+        end)
+        if err then
+            warn(err)
+        end
+    end)
+
+    repeat wait() until getgenv().PASSMOOD == "HOOK HOOK"
+    getgenv().PASSMOOD = nil
+end
+
+--------------------------- [[ Prepare Headders ]] ---------------------------
+if not LPH_OBFUSCATED then
+    LPH_NO_VIRTUALIZE = LPH_NO_VIRTUALIZE or function(...) return ... end
+end
+
+
+local _Blank = function() end
+local Debug = true
+local Debug_Log = function(...) if Debug then print(...) end end 
+
+local game = game
+local Collection = {}; Collection.__index = Collection
+local function getService(service)
+    return game:GetService(service); -- create service return stuff
+end
+local Services = setmetatable({}, {
+    __index = function(_, k)
+        return getService(k)
+    end
+})
+
+-- if setfpscap then
+--     setfpscap(999)
+-- end
+
+---------------------------------------------- [ Exploits Variables ] ----------------------------------------------
+
+_sethiddenproperty = sethiddenproperty or set_hidden_property or set_hidden_prop
+_gethiddenproperty = gethiddenproperty or get_hidden_property or get_hidden_prop
+_setsimulationradius = setsimulationradius or set_simulation_radius
+_queue_on_teleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
+_http_request = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
+_getcustomasset = (syn and getsynasset) or getcustomasset
+
+--------------------------- [[ Services ]] ---------------------------
+
+local JobId = tostring(game.JobId)
+local PlaceId = tonumber(game.PlaceId);
+local TweenService = Services.TweenService
+local UserInputService = Services.UserInputService
+local ReplicatedStorage = Services.ReplicatedStorage
+local CoreGui = Services.CoreGui
+local TeleportService = Services.TeleportService
+local Lighting = Services.Lighting
+local HttpService = Services.HttpService
+local PathfindingService = Services.PathfindingService
+local RunService = Services.RunService
+local CollectionService = Services.CollectionService
+local Teams = Services.Teams
+local Players = Services.Players
+local CurrentCamera = workspace.CurrentCamera
+local WorldToViewportPoint = CurrentCamera.WorldToViewportPoint
+local Camera = Workspace:FindFirstChildOfClass("Camera")
+local Client = LocalPlayer
+local ReplicatedFirst = game:GetService("ReplicatedFirst")
+local VirtualInputManager = game:GetService("VirtualInputManager")
+local Mobile = false
+
+local LocalPlayer = Players.LocalPlayer;
+local Mouse = LocalPlayer:GetMouse();
+
+local Signals_List = {'Activated'}
+local IsLoaded = false
+
+local UITitle = "Lynix Hub x SynTax Hub"
+local ProjectName = "Driving_Empire" 
+local filename = "SynTax_Hub_Next_Generation/SaveSettings/"..ProjectName.."/" .. tostring(LocalPlayer.Name) ..".json"
+
+--------------------------- [[ Games Varibles ]] ---------------------------
+
+local Remotes = ReplicatedStorage:WaitForChild("Remotes")
+local Vehicles = workspace:WaitForChild("Vehicles")
+
+--------------------------- [[ Specific Varibles ]] ---------------------------
+
+local FunctionTask = {}
+local Part_Proprerties = {Name = "Deity-Tween",Anchored = true,Transparency = 1,CanCollide = false}
+local Billboard_Property = {
+    Name = "ESP_Billboard";
+    Enabled = true;
+    AlwaysOnTop = true;
+    ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
+    Active = true;
+    LightInfluence = 1.000;
+    Size = UDim2.new(0, 150, 0, 25);
+    StudsOffset = Vector3.new(0, 0, 0);
+}
+local TexT_Property = {
+    Name = "ESP_Billboard_Text";
+    BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+    BackgroundTransparency = 1.000;
+    Size = UDim2.new(0, 150, 0, 25);
+    Font = Enum.Font.FredokaOne;
+    RichText = true;
+    Font = Enum.Font.Code;
+    TextScaled = true;
+    TextSize = 14.000;
+    TextStrokeTransparency = 0;
+    TextStrokeColor3 = Color3.fromRGB(0, 0, 0);
+    TextWrapped = true;
+}
+
+--------------------------- [[ Save Settings ]] ---------------------------
+
+getgenv().SaveSettings = SaveSettings or {
+    ["SelectedCar"] = "roadster1",
+    ["Backtostartpoint"] = 10,
+    ["Boost_Car_Speed"] = 520,
+    ["AutoFarm"] = true,
+    ["Auto_Collect_Challenges"] = true,
+    ["Notify_Disconnected"] = true,
+    ["Notify_Account_Stats"] = true,
+    ["Webhook_URL"] = "",
+    ["Auto_Rejoin"] = true,
+    ["Boost_FPS"] = true,
+    ["Anti-AFK"] = true,
+    ["SpawnPosition"] = {
+        X = -32551,
+        Y = 35,
+        Z = -28858,
+    }
+}
+
+
+function Collection:Load()
+    if readfile and writefile and isfile and isfolder then
+        if not isfolder("LynIx_Hub_Next_Generation") then
+            makefolder("LynIx_Hub_Next_Generation")
+        end
+        if not isfolder("LynIx_Hub_Next_Generation/SaveSettings") then
+            makefolder("LynIx_Hub_Next_Generation/SaveSettings")
+        end
+        if not isfolder("LynIx_Hub_Next_Generation/SaveSettings/" .. ProjectName) then
+            makefolder("LynIx_Hub_Next_Generation/SaveSettings/" .. ProjectName)
+        end
+        if not isfile(filename) then
+            writefile(filename, HttpService:JSONEncode(SaveSettings))
+        else
+            local Decode = HttpService:JSONDecode(readfile(filename))
+            for i,v in pairs(Decode) do
+                SaveSettings[i] = v
+            end
+        end
+    else
+        warn("[Lynix x SynTax] Failed to loading script... (Please Contect Admins)")
+        return false
+    end
+end
+
+function Collection:Save()
+    if readfile and writefile and isfile then
+        if not isfile(filename) then
+            Collection:Load()
+        else
+            local Decode = HttpService:JSONDecode(readfile(filename))
+            local Array = {}
+            for i,v in pairs(SaveSettings) do
+                Array[i] = v
+            end
+            writefile(filename, HttpService:JSONEncode(Array))
+        end
+    else
+        warn("[Lynix x SynTax] Failed Save")
+        return false
+    end
+end
+
+--------------------------- [[ Global Variable ]] ---------------------------
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lynix001/LynIx/main/UI/Fluent/Modified.lua"))() 
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+local MOOD_Notifier = loadstring([[
+    local notifier = Instance.new("ScreenGui")
+    local bg = Instance.new("Frame")
+    local UIListLayout = Instance.new("UIListLayout")
+
+    if game.CoreGui:FindFirstChild("notifier") then
+        game.CoreGui:FindFirstChild("notifier"):Destroy()
+    end
+    notifier.Name = "notifier"
+    notifier.Parent = game.CoreGui
+    notifier.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+    bg.Name = "bg"
+    bg.Parent = notifier
+    bg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    bg.BackgroundTransparency = 1.000
+    bg.Position = UDim2.new(0.288473517, 0, 0.320685446, 0)
+    bg.Size = UDim2.new(0.422429919, 0, 0.358629137, 0)
+
+    UIListLayout.Parent = bg
+    UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+    UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+    return function(Text,Time)
+        local TextLabel = Instance.new("TextLabel")
+        local Frame = Instance.new("Frame")
+        Frame.Parent = bg
+        Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Frame.Position = UDim2.new(0.426253676, 0, 0.479522198, 0)
+        Frame.Size = UDim2.new(0.17699115, 0, 0.0, 0)
+        Frame.BackgroundTransparency = 1
+        TextLabel.Parent = bg
+        TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel.BackgroundTransparency = 1.000
+        TextLabel.Position = UDim2.new(0, 0, 0.450000018, 0)
+        TextLabel.Size = UDim2.new(1, 0, 0.0658702999, 0)
+        TextLabel.Font = Enum.Font.GothamBold
+        TextLabel.Text = Text
+        TextLabel.TextTransparency = 1
+        TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel.TextSize = 19.000
+        game:GetService("TweenService"):Create(Frame,TweenInfo.new(0.2, Enum.EasingStyle.Linear),{Size = UDim2.new(0.17699115, 0, 0.0170648471, 0)}):Play()
+        game:GetService("TweenService"):Create(TextLabel,TweenInfo.new(0.2, Enum.EasingStyle.Linear),{TextTransparency = 0}):Play()
+        spawn(function()
+            wait(Time)
+            game:GetService("TweenService"):Create(Frame,TweenInfo.new(0.2, Enum.EasingStyle.Linear),{Size = UDim2.new(0.17699115, 0, 0, 0)}):Play()
+            game:GetService("TweenService"):Create(TextLabel,TweenInfo.new(0.2, Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+            wait(0.2)
+            Frame:Destroy()
+            TextLabel:Destroy()
+        end)
+        wait()
+    end]]
+)()
+
+local Options = Library.Options
+
+--------------------------- [[ UI Function ]] ---------------------------
+
+function Collection:ToggleCallback(Toggle_Path)
+    for i,v in pairs(Options) do
+            warn( i,v)
+    end
+
+    Options[Toggle_Path]:OnChanged(function()
+        if IsLoaded and not Options[Toggle_Path].Value then
+            -- Stop Tween
+            
+        end
+        
+        SaveSettings[Toggle_Path] = Options[Toggle_Path].Value
+        Collection:Save()
+    end)
+end
+function Collection:Dropdown_Slider_Input_Callback(Toggle_Path)
+    Options[Toggle_Path]:OnChanged(function()
+        if IsLoaded then
+            SaveSettings[Toggle_Path] = Options[Toggle_Path].Value
+            Collection:Save()
+        end
+    end)
+end
+function Collection:Multi_Dropdown_Callback(Object)
+    Options[Object]:OnChanged(function()
+        SaveSettings[Object] = Options[Object].Value
+        -- print("SAVE")
+        Collection:Save()
+    end)
+end
+function Collection:Load_Multi_Dropdown(Object)
+    -- print(Object, SaveSettings[Object], SaveSettings["Selected_Skills"])
+
+    -- for i,v in pairs(SaveSettings[Object]) do
+    --     warn(i,v)
+    -- end
+    -- print("-----------------")
+    -- for i,v in pairs(SaveSettings["Selected_Skills"]) do
+    --     warn(i,v)
+    -- end
+
+    if SaveSettings[Object] == nil then
+        SaveSettings[Object] = {}
+    end
+
+    Options[Object]:SetValue(SaveSettings[Object])
+end
+function Collection:AddColorPicker(ColorPicker_path,DefaultColor)
+    local Result
+    if SaveSettings[ColorPicker_path.TextLabel.Text .. '_Color'] then
+        Result = Color3.new(SaveSettings[ColorPicker_path.TextLabel.Text .. '_Color'].R,SaveSettings[ColorPicker_path.TextLabel.Text .. '_Color'].G,SaveSettings[ColorPicker_path.TextLabel.Text .. '_Color'].B)
+    else
+        Result = DefaultColor
+    end
+    ColorPicker_path:AddColorPicker(ColorPicker_path.TextLabel.Text .. '_Color', {
+        Default = Result,
+        Title = '',
+    })
+    Options[ColorPicker_path.TextLabel.Text .. '_Color']:OnChanged(function()
+        if SaveSettings[ColorPicker_path.TextLabel.Text .. '_Color'] == nil then 
+            SaveSettings[ColorPicker_path.TextLabel.Text .. '_Color'] = {}
+        end
+        SaveSettings[ColorPicker_path.TextLabel.Text .. '_Color'].R = Options[ColorPicker_path.TextLabel.Text .. '_Color'].Value.R
+        SaveSettings[ColorPicker_path.TextLabel.Text .. '_Color'].G = Options[ColorPicker_path.TextLabel.Text .. '_Color'].Value.G
+        SaveSettings[ColorPicker_path.TextLabel.Text .. '_Color'].B = Options[ColorPicker_path.TextLabel.Text .. '_Color'].Value.B
+        Collection:Save()
+    end)
+end
+
+---------------------------------------------- [ Game Functions ] ----------------------------------------------
+function Collection:GetRoot(Character)
+    local Root
+    xpcall(function()
+        if Character and Character:FindFirstChild("HumanoidRootPart") then
+            Root = Character.HumanoidRootPart
+        end
+    end,Debug_Log)
+    return Root
+end
+function Collection:GetHum(Character)
+    local Humanoid
+    xpcall(function()
+        if Character and Character:FindFirstChild("Humanoid") then
+            Humanoid = Character.Humanoid
+        end
+    end,Debug_Log)
+    return Humanoid
+end
+function Collection:Comma(amount)
+    local formatted = amount
+    while true do  
+      formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
+      if (k==0) then
+        break
+      end
+    end
+    return formatted
+  end
+
+function Collection:GetSelfDistance(Object)
+    local _Magnitude = 9999
+    xpcall(function()
+        local Position = (typeof(Object) == "CFrame") and Object.Position or Object
+        local RootPart = Collection:GetRoot(LocalPlayer.Character)
+        _Magnitude = (RootPart.Position - Position).Magnitude
+    end,Debug_Log)
+    return _Magnitude
+end
+function Collection:TeleportCFrame(_CFrame)
+    xpcall(function()
+        local Current_CFrame = typeof(_CFrame) == "Vector3" and CFrame.new(_CFrame) or _CFrame
+        local RootPart = Collection:GetRoot(LocalPlayer.Character)
+
+        if Current_CFrame and RootPart then
+            RootPart.CFrame = Current_CFrame
+        end
+    end,Debug_Log)
+end
+function Collection:LookAt(_Position)
+    xpcall(function()
+        local RootPart = Collection:GetRoot(LocalPlayer.Character)
+        RootPart.CFrame = CFrame.lookAt(RootPart.Position, _Position)
+    end,Debug_Log)
+end
+function Collection:GetObjectDistance(Position_1,Position_2)
+    return (Position_1 - Position_2).Magnitude
+end
+function Collection:fireclickbutton(_Button)
+    xpcall(function()
+        for i,v in pairs(Signals_List) do firesignal(_Button[v]) end
+        -- VirtualInputManager:SendMouseButtonEvent(_Button.AbsolutePosition.X + 115, _Button.AbsolutePosition.Y + 50, 0, not UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1), game, 1)
+    end,Debug_Log)
+end
+function Collection:Teleport(Object)
+    local Position = (typeof(Object) == "CFrame") and Object.Position or Object
+    local HumanoidRootPart = Collection:GetRoot(LocalPlayer.Character)
+    local Always_Distancing =  Collection:GetSelfDistance(Position)
+    local InBetween_Part = Workspace:FindFirstChild("Deity-Tween") or Instance.new("Part",workspace)
+    for Proprerty,Value in pairs(Part_Proprerties) do InBetween_Part[Proprerty] = Value end
+    local DistanceFromPart = Collection:GetSelfDistance(InBetween_Part.Position)
+    local Max_Distance = 140
+    local Max_Speed = 350
+
+    if Always_Distancing <= Max_Distance then
+        return Collection:TeleportCFrame(Position)  
+    end
+    if Always_Distancing > 1000 then 
+        Max_Speed = 300
+    end
+    
+    if DistanceFromPart >= 150 then
+        InBetween_Part.CFrame = HumanoidRootPart.CFrame
+    end
+    
+    TweenService:Create(InBetween_Part, TweenInfo.new(Always_Distancing / Max_Speed, Enum.EasingStyle.Linear), {CFrame = CFrame.new(Position)}):Play()
+    Collection:TeleportCFrame(InBetween_Part.CFrame)
+end
+function Collection:CarTeleport(Object)
+    local Owned_Vehicles = Vehicles:FindFirstChild(LocalPlayer.Name)
+    if not Owned_Vehicles then return end
+    local Position = (typeof(Object) == "CFrame") and Object.Position or Object
+    local HumanoidRootPart = Collection:GetRoot(LocalPlayer.Character)
+    local Always_Distancing =  Collection:GetSelfDistance(Position)
+    local InBetween_Part = Workspace:FindFirstChild("Deity-Tween") or Instance.new("Part",workspace)
+    for Proprerty,Value in pairs(Part_Proprerties) do InBetween_Part[Proprerty] = Value end
+    local DistanceFromPart = Collection:GetSelfDistance(InBetween_Part.Position)
+    local Max_Distance = 140
+    local Max_Speed = 900
+
+    -- if Always_Distancing <= Max_Distance then
+    --     return Collection:TeleportCFrame(Position)  
+    -- end
+    
+    if DistanceFromPart >= 150 then
+        InBetween_Part.CFrame = HumanoidRootPart.CFrame
+    end
+    
+    TweenService:Create(InBetween_Part, TweenInfo.new(Always_Distancing / Max_Speed, Enum.EasingStyle.Linear), {CFrame = CFrame.new(Position)}):Play()
+    -- Collection:TeleportCFrame(InBetween_Part.CFrame)
+    Owned_Vehicles:SetPrimaryPartCFrame(InBetween_Part.CFrame)
+end
+function Collection:Keyboard(Key,Holding)
+    spawn(function()
+        xpcall(function()
+            if Holding == nil then
+                Holding = 0 
+            end
+            VirtualInputManager:SendKeyEvent(true,Key,false,Collection:GetRoot(LocalPlayer.Character))
+            wait(Holding)
+            VirtualInputManager:SendKeyEvent(false,Key,false,Collection:GetRoot(LocalPlayer.Character)) 
+        end,Debug_Log)
+    end)
+end
+
+function Collection:fireproximityprompt(Obj, Amount, Skip)
+    xpcall(function()
+        if Obj.ClassName == "ProximityPrompt" then 
+            Amount = Amount or 1
+            local PromptTime = Obj.HoldDuration
+            if Skip then 
+                Obj.HoldDuration = 0
+            end
+            for i = 1, Amount do 
+                Obj:InputHoldBegin()
+                if not Skip then 
+                    wait(Obj.HoldDuration)
+                end
+                Obj:InputHoldEnd()
+            end
+            Obj.HoldDuration = PromptTime
+        else 
+            error("userdata<ProximityPrompt> expected")
+        end
+    end,Debug_Log)
+end
+
+function Collection:New(Object,Property)
+    local Object_ = Instance.new(Object)
+    for i,v in pairs(Property) do
+        Object_[i] = v
+    end
+    return Object_
+end
+local function CountTable(t)
+    local count, key = 0
+    repeat
+        key = next(t, key)
+        if key ~= nil then
+            count = count + 1
+        end
+    until key == nil
+    return count
+end
+local PrintTable
+local function ParseObject(object, spacing, scope, checkedTables)
+    local objectType = type(object)
+    if objectType == "string" then
+        return spacing .. string.format("%q", object)
+    elseif objectType == "nil" then
+        return spacing .. "nil"
+    elseif objectType == "table" then
+        if checkedTables[object] then
+            return spacing .. tostring(object) .. " [recursive table]"
+        else
+            checkedTables[object] = true
+            return spacing .. PrintTable(object, scope + 1, checkedTables)
+        end
+    elseif objectType == "userdata" then
+        if typeof(object) == "userdata" then
+            return spacing .. "userdata"
+        else
+            return spacing .. tostring(object)
+        end
+    else -- userdata, function, boolean, thread, number
+        return spacing .. tostring(object)
+    end
+end
+function PrintTable(t, scope, checkedTables)
+    local mt = getrawmetatable(t)
+    local backup = {}
+    if mt and mt ~= t then
+        for i, v in pairs(mt) do
+            rawset(backup, i, v)
+            rawset(mt, i, nil)
+        end
+    end
+
+    checkedTables = checkedTables or {}
+    scope = scope or 1
+    local result = (checkedTables and "{" or "") .. "\n"
+    local spacing = string.rep("\t", scope)
+    local function parse(index, value)
+        result = result .. ParseObject(index, spacing, scope, checkedTables) .. " -: " .. ParseObject(value, "", scope, checkedTables) .. "\n"
+    end
+
+    if CountTable(t) ~= #t then
+        table.foreach(t, parse) -- I'm very aware this is a deprecated function
+    else
+        for index = 1, select("#", unpack(t)) do
+            parse(index, t[index])
+        end
+    end
+
+    if mt and mt ~= t then
+        for i, _ in pairs(backup) do
+            rawset(mt, i, rawget(backup, i))
+        end
+    end
+
+    return result .. string.sub(spacing, 1, #spacing - 1) .. (checkedTables and "}" or "")
+end
+
+
+
+--------------------------- [[ Game Function ]] ---------------------------
+
+
+function Collection:AutoFullyUpdate(Car)
+    local CustomizationPurchase = Remotes:FindFirstChild("CustomizationPurchase")
+    local CustomizationInstall = Remotes:FindFirstChild("CustomizationInstall")
+    if CustomizationPurchase and CustomizationInstall then
+        CustomizationPurchase:InvokeServer("Engine",Car,"RaceEngine","0")
+        CustomizationInstall:InvokeServer("Engine",Car,"RaceEngine")
+        CustomizationPurchase:InvokeServer("Aspiration",Car,"QuadTurbo","0")
+        CustomizationInstall:InvokeServer("Aspiration",Car,"QuadTurbo")
+        CustomizationPurchase:InvokeServer("Brakes",Car,"RaceBrakes","1")
+        CustomizationInstall:InvokeServer("Brakes",Car,"RaceBrakes")
+        CustomizationPurchase:InvokeServer("Tires",Car,"RaceTires","0")
+        CustomizationInstall:InvokeServer("Tires",Car,"RaceTires")
+        CustomizationPurchase:InvokeServer("Nitrous",Car,"PowerfulBoost","0")
+        CustomizationInstall:InvokeServer("Nitrous",Car,"PowerfulBoost")
+    end
+end
+--------------------------- [[ Prepare UI ]] ---------------------------
+
+if not _G.UseConfig then
+    Collection:Load()
+end
+
+MOOD_Notifier("Checking Whitelist...",1)
+
+local Window = Library:CreateWindow({
+    Title = UITitle,
+    SubTitle = "by x1Zpell ,SirLemoN",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
+    Theme = "Amethyst",
+    Transparency = false,
+    MinimizeKey = Enum.KeyCode.RightControl -- Used when theres no MinimizeKeybind
+})
+
+local Tabs = {
+    Main = Window:AddTab({ Title = "General", Icon = "mouse-pointer-click" }),
+    Misc = Window:AddTab({ Title = "Miscellaneous ", Icon = "bar-chart" }),
+    Webhooks = Window:AddTab({ Title = "Webhooks", Icon = "bell" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
+    Store = Window:AddTab({ Title = "Store", Icon = "shopping-cart" }),
+}
+
+local Options = Library.Options
+
+MOOD_Notifier("Starting up! Lynix x SynTax  Premium Scripts",4)
+wait(1)
+MOOD_Notifier("Initializing the UI...",3)
+
+--------------------------- [[ Main ]] ---------------------------
+
+if false then
+    local Events_Section = Tabs.Main:AddSection("\xF0\x9F\xA5\x9A Events")
+
+    Events_Section:AddToggle('Auto_Collect_Egg', {Title = 'Auto Collect Egg',Default = SaveSettings["Auto_Collect_Egg"]}) Collection:ToggleCallback("Auto_Collect_Egg")
+    
+    Events_Section:AddToggle('Finish_High_Way', {Title = 'Finish_High_Way',Default = SaveSettings["Finish_High_Way"]}) Collection:ToggleCallback("Finish_High_Way")
+    
+end
+
+local Main_Section = Tabs.Main:AddSection("\xE2\x9A\xA1 Farming Sections")
+
+local Status_Paragraph = Main_Section:AddParagraph({
+    Title = "Status",
+    Content = "None"
+})
+
+Main_Section:AddToggle('AutoFarm', {Title = 'Auto Farm',Default = SaveSettings["AutoFarm"]}) Collection:ToggleCallback("AutoFarm")
+if SaveSettings["Auto_Collect_Challenges"] == nil then SaveSettings["Auto_Collect_Challenges"] = true end
+Main_Section:AddToggle('Auto_Collect_Challenges', {Title = 'Auto Collect Challenges',Default = SaveSettings["Auto_Collect_Challenges"]}) Collection:ToggleCallback("Auto_Collect_Challenges")
+
+
+Main_Section:AddSlider("Backtostartpoint", {
+    Title = "Back to Start Point (Default: 10 seconds)",
+    Description = "Back to the Starting Point (Revert to the initially set second.)",
+    Default = SaveSettings["Backtostartpoint"],   -- 10
+    Min = 1,
+    Max = 40,
+    Rounding = 0,
+}) Collection:Dropdown_Slider_Input_Callback("Backtostartpoint")
+Main_Section:AddSlider("Boost_Car_Speed", {
+    Title = "Boost Speed",
+    Description = "500-600 for starter car\n650 ++ for VIP car",
+    Default = SaveSettings["Boost_Car_Speed"],   -- 700
+    Min = 400,
+    Max = 590,
+    Rounding = 0,
+}) Collection:Dropdown_Slider_Input_Callback("Boost_Car_Speed")
+
+--------------------------- [[ Settings Sections ]] ---------------------------
+
+function Collection:getcarlist()
+    local carlist = {}
+    for i,v in pairs(LocalPlayer.PlayerGui.MainHUD.Vehicles.Container.List:GetChildren()) do
+        if v.Name ~= "Template" and v.Name ~= "UIGridLayout" and v.Name ~= "BuyButton" then
+            table.insert(carlist,v.Name)
+        end
+    end
+    return carlist
+end
+
+local Main_Settings_Section = Tabs.Main:AddSection("\xE2\x9E\x95 Settings Sections")
+local Spawn_Position = Main_Settings_Section:AddParagraph({
+    Title = "- Spawn Position -",
+    Content = "X: "..math.floor(SaveSettings["SpawnPosition"].X)..", Y: "..math.floor(SaveSettings["SpawnPosition"].Y)..", Z: " .. math.floor(SaveSettings["SpawnPosition"].Z)
+}) 
+
+Main_Settings_Section:AddButton({
+    Title = "Set Spawnpoint",
+    Description = "Set the spawn point at the location where you want to farm cash",
+    Callback = function()
+        local GetPos = LocalPlayer.Character.HumanoidRootPart.Position
+        Spawn_Position:SetDesc("X : " .. math.floor(GetPos.X) .. ", Y : " .. math.floor(GetPos.Y) .. ", Z :" .. math.floor(GetPos.Z))
+        getgenv().SaveSettings["SpawnPosition"] = {
+            X = math.floor(GetPos.X),
+            Y = math.floor(GetPos.Y),
+            Z = math.floor(GetPos.Z),
+        }
+        Collection:Save()
+    end
+})
+
+Main_Settings_Section:AddDropdown("SelectedCar", {
+    Title = "Select Vehicle",
+    Values = Collection:getcarlist(),
+    Multi = false,
+    Default = SaveSettings["SelectedCar"],
+}) Collection:Dropdown_Slider_Input_Callback("SelectedCar")
+
+
+
+
+
+Main_Settings_Section:AddButton({
+    Title = "Refresh Vehicle",
+    Description = "",
+    Callback = function()
+        Options.SelectedCar.Values = Collection:getcarlist()
+        Options.SelectedCar:SetValues()
+        -- print(" REFRESH ")
+    end
+})
+Main_Settings_Section:AddToggle('Anti_Spy_Mode', {Title = 'Anti-Spy Mode',Default = false})
+ 
+
+
+--------------------------- [[ Miscellaneous ]] ---------------------------
+
+local Miscellaneous_Section = Tabs.Misc:AddSection("\xE2\xAC\x86\xEF\xB8\x8F Upgrade Sections")
+
+-- Miscellaneous_Section:AddDropdown("SelectedCarForUpgrade", {
+--     Title = "Select Vehicle:",
+--     Values = Collection:getcarlist(),
+--     Multi = false,
+--     Default = SaveSettings["SelectedCarForUpgrade"],
+-- }) Collection:Dropdown_Slider_Input_Callback("SelectedCarForUpgrade")
+Miscellaneous_Section:AddButton({
+    Title = "Fully Upgrade Vehicle [Auto Install]",
+    Description = "You must sit on your car.",
+    Callback = function()
+        Window:Dialog({
+            Title = "Fully Upgrade Vehicle",
+            Content = 'Are you sure to upgrade "'..workspace.Vehicles[LocalPlayer.Name].CarType.Value..'" ?',
+            Buttons = {
+                {
+                    Title = "Confirm",
+                    Callback = function()
+                        Collection:AutoFullyUpdate(workspace.Vehicles[LocalPlayer.Name].CarType.Value)
+                        Library:Notify({
+                            Title = "Fully Upgrade [Notification]",
+                            Content = "Successfully, Your vehicle has been upgraded with everything!",
+                            Duration = 5
+                        })
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        
+                    end
+                }
+            }
+        })
+    end
+})
+
+local Miscellaneous_Section = Tabs.Misc:AddSection("\xF0\x9F\x91\x81\xEF\xB8\x8F ESP Sections")
+
+--// Put Dropdown
+
+Miscellaneous_Section:AddToggle('ESP_Vehicles', {Title = 'ESP - Vehicles',Default = SaveSettings["ESP_Vehicles_Players"]}) Collection:ToggleCallback("ESP_Vehicles")
+Miscellaneous_Section:AddToggle('ESP_Players', {Title = 'ESP - Players',Default = SaveSettings["ESP_Players"]}) Collection:ToggleCallback("ESP_Vehicles")
+
+
+
+local Modified_Sections = Tabs.Misc:AddSection("\xF0\x9F\x94\xA7 Modified Sections")
+
+
+
+-- Modified_Sections:AddToggle('Noclip', {Title = 'Noclip',Default = SaveSettings["Noclip"]}) Collection:ToggleCallback("Noclip")
+
+-- Modified_Sections:AddToggle('Free Camera', {Title = 'Free Camera',Default = SaveSettings["Free Camera"]}) Collection:ToggleCallback("Free Camera")
+
+Modified_Sections:AddToggle('Hide_Username', {Title = 'Hide Username',Default = SaveSettings["Hide_Username"]}) Collection:ToggleCallback("Hide_Username")
+Modified_Sections:AddToggle('Anti-AFK', {Title = 'Anti-AFK Mode',Default = SaveSettings["Anti-AFK"]}) Collection:ToggleCallback("Anti-AFK")
+Modified_Sections:AddToggle('Auto_Rejoin', {Title = 'Auto Rejoin Servers',Default = SaveSettings["Auto_Rejoin"]}) Collection:ToggleCallback("Auto_Rejoin")
+
+Modified_Sections:AddSlider("WalkSpeed", {
+    Title = "Walk Speed:",
+    Description = "This feature will make you run faster.",
+    Default = 16,   -- 10
+    Min = 1,
+    Max = 200,
+    Rounding = 0,
+})
+Modified_Sections:AddSlider("JumpPower", {
+    Title = "JumpPower:",
+    Description = "This feature will make you jump higher.",
+    Default = 50,   -- 10
+    Min = 1,
+    Max = 200,
+    Rounding = 0,
+})
+
+------------------------- [[ Webhook ]] ---------------------------
+
+function Collection:Send_Webhook_Result(API_URL)
+    xpcall(function()
+        if not API_URL:find("http") then
+            return
+        end
+        data = {
+            ["username"] = "LynIx Hub | Result Notification",
+            ["avatar_url"] = "https://cdn.discordapp.com/attachments/1101167753269870664/1166819034294145064/Lynix-logo.jpg?ex=65b16368&is=659eee68&hm=fa8f64a1bc7f8e7c383dc08fa9646d00a920e76965d3902c803d7338446af866&",
+            ["content"] = " ",
+            ["embeds"] = {
+                {
+                    ["title"] = "\xF0\x9F\x94\x94 \x44\x72\x69\x76\x69\x6E\x67\x20\x45\x6D\x70\x69\x72\x65\x20\x4E\x6F\x74\x69\x66\x69\x63\x61\x74\x69\x6F\x6E",
+                    ["description"] = "\x3E\x20\xE2\x9E\xA1\xEF\xB8\x8F\x20\x5B\xE0\xB8\xAA\xE0\xB8\x99\xE0\xB9\x83\xE0\xB8\x88\xE0\xB8\x8B\xE0\xB8\xB7\xE0\xB9\x89\xE0\xB8\xAD\xE0\xB8\xAA\xE0\xB8\x84\xE0\xB8\xA3\xE0\xB8\xB4\xE0\xB8\x9B\xE0\xB8\x95\xE0\xB9\x8C\x20\x44\x72\x69\x76\x69\x6E\x67\x20\x45\x6D\x70\x69\x72\x65\x20\xE0\xB9\x84\xE0\xB8\x94\xE0\xB9\x89\xE0\xB8\x97\xE0\xB8\xB5\xE0\xB9\x88\x5D\x28\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6C\x79\x6E\x69\x78\x73\x74\x6F\x72\x65\x2E\x78\x65\x7A\x77\x2E\x78\x79\x7A\x2F\x20\x29",
+                    ["type"] = "rich",
+                    ["color"] = "10117631",
+                    ["fields"] = {
+                        {
+                            ["name"] = "• Username",
+                            ["value"] = "```"..LocalPlayer.Name.."```",
+                            ["inline"] = true
+                        },
+                        {
+                            ["name"] = "• Total Cash",
+                            ["value"] = "```$"..Collection:Comma(LocalPlayer.leaderstats.Cash.Value).."```",
+                            ["inline"] = true
+                        }
+                    },
+                    
+                    ["image"] = {
+                        ["url"] = "https://cdn.discordapp.com/attachments/1101167753269870664/1101182977851003000/DE_Banner.png?ex=65b28c10&is=65a01710&hm=7fcb98da0034289a9d9b91b739a8c0cb5cf6ec0e7900eb4c5affa1a7515b7699"
+                    },
+                    ["thumbnail"] = {
+                        ["url"] = "https://tr.rbxcdn.com/8b3ffb79cc9f1406e9b536030a03d6cb/512/512/Image/Png"
+                    },
+                    ["footer"] = {
+                        ["text"] = "\xE2\x86\x92\x20\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6C\x79\x6E\x69\x78\x73\x74\x6F\x72\x65\x2E\x78\x65\x7A\x77\x2E\x78\x79\x7A\x2F\x20\xE2\x94\x87\x20\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x2E\x67\x67\x2F\x6D\x39\x56\x62\x70\x57\x67\x54\x67\x32",
+                      },
+                }
+            }
+        }
+        _http_request({Url = API_URL, Body = HttpService:JSONEncode(data), Method = "POST", Headers = {["content-type"] = "application/json"}})
+    end,print)
+end
+function Collection:Send_Webhook_Disconnect(API_URL)
+    xpcall(function()
+        if not API_URL:find("http") then
+            return
+        end
+        data = {
+            ["username"] = "LynIx Hub | Result Notification",
+            ["avatar_url"] = "https://cdn.discordapp.com/attachments/1101167753269870664/1166819034294145064/Lynix-logo.jpg?ex=65b16368&is=659eee68&hm=fa8f64a1bc7f8e7c383dc08fa9646d00a920e76965d3902c803d7338446af866&",
+            ["content"] = "@here Your account has disconnected! (ID: ||"..LocalPlayer.Name.."||)",
+        }
+        _http_request({Url = API_URL, Body = HttpService:JSONEncode(data), Method = "POST", Headers = {["content-type"] = "application/json"}})
+    end,print)
+end
+function Collection:Send_Webhook_Test(API_URL)
+    xpcall(function()
+        if not API_URL:find("http") then
+            return
+        end
+        data = {
+            ["username"] = "LynIx Hub | Result Notification",
+            ["avatar_url"] = "https://cdn.discordapp.com/attachments/1101167753269870664/1166819034294145064/Lynix-logo.jpg?ex=65b16368&is=659eee68&hm=fa8f64a1bc7f8e7c383dc08fa9646d00a920e76965d3902c803d7338446af866&",
+            ["content"] = "@here Yoooo! You got a million dollar! - Mr. Beast https://media.discordapp.net/attachments/1074202318825869312/1195807749741756496/IMG_0655.jpg?ex=65b555c0&is=65a2e0c0&hm=4848b64b6c598d20fa551b226a3a5cd0623e4ddf823d7bd324a8a3fb590d493b&=&format=webp&width=494&height=671",
+        }
+        _http_request({Url = API_URL, Body = HttpService:JSONEncode(data), Method = "POST", Headers = {["content-type"] = "application/json"}})
+    end,print)
+end
+
+Tabs.Webhooks:AddInput("Webhook_URL", {
+    Title = "Webhook URL:",
+    Default = SaveSettings["Webhook_URL"],
+    Placeholder = "Enter Webhook URL",
+    Numeric = false, 
+    Finished = false,
+}) Collection:Dropdown_Slider_Input_Callback("Webhook_URL")
+Tabs.Webhooks:AddButton({
+    Title = "[\xE2\x9C\x85] Check Webhook",
+    Description = "This button use to test your webhook.",
+    Callback = function()
+        Collection:Send_Webhook_Test(Options["Webhook_URL"].Value)
+    end
+})
+
+local Notifications_Sections = Tabs.Webhooks:AddSection("\xF0\x9F\x94\xA7 Notifications")
+Notifications_Sections:AddToggle('Notify_Disconnected', {Title = 'Notify - Disconnected',Default = SaveSettings["Notify_Disconnected"]}) Collection:ToggleCallback("Notify_Disconnected")
+Notifications_Sections:AddToggle('Notify_Account_Stats', {Title = 'Notify - Account Stats',Default = SaveSettings["Notify_Account_Stats"]}) Collection:ToggleCallback("Notify_Account_Stats")
+
+--------------------------- [[ Memory_Section ]] ---------------------------
+
+local Memory_Section = Tabs.Settings:AddSection("Memory")
+Memory_Section:AddButton({
+    Title = "[\xF0\x9F\x9A\x80] Activated FPS Booster",
+    Description = "Reduce in-game graphics and increase FPS after you press this button it 5-10 seconds game freeze",
+    Callback = function()
+        local Terrain = workspace:FindFirstChildOfClass('Terrain')
+        local Lighting = game:GetService('Lighting')
+        Terrain.WaterWaveSize = 0
+        Terrain.WaterWaveSpeed = 0
+        Terrain.WaterReflectance = 0
+        Terrain.WaterTransparency = 0
+
+        Lighting.GlobalShadows = false
+        Lighting.FogEnd = 9e9
+
+        for _, v in pairs(workspace:GetDescendants()) do
+            if table.find({"Weather", "RainEmitterPart", "Water", "WaterBase-Plane"}, v.Name) or v.Name:find("Texture") or v:IsA("ParticleEmitter") or v:IsA("Decal") or v:IsA("Sound") then
+                game.Debris:AddItem(v, 0)
+            end
+        end
+        for i,v in pairs(Lighting:GetDescendants()) do
+            if v:IsA("BlurEffect") or v:IsA("SunRaysEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("BloomEffect") or v:IsA("DepthOfFieldEffect") then
+                v.Enabled = false
+            end
+        end
+        workspace.DescendantAdded:Connect(function(child)
+            pcall(function()
+                if table.find({"Weather", "RainEmitterPart", "Water", "WaterBase-Plane"}, child.Name) or child.Name:find("Texture") or child:IsA("ParticleEmitter") or child:IsA("Decal") or child:IsA("Sound") then
+                    game.Debris:AddItem(child, 0)
+                end
+            end)
+        end)
+        settings().Rendering.QualityLevel = 1
+        UserSettings():GetService("UserGameSettings").MasterVolume = 0
+        settings():GetService("NetworkSettings").IncomingReplicationLag = 0
+    end
+})
+
+if SaveSettings["Boost_FPS"] then
+    pcall(function()
+        if setfpscap then
+            setfpscap(400)
+        end
+        local Terrain = workspace:FindFirstChildOfClass('Terrain')
+        local Lighting = game:GetService('Lighting')
+        Terrain.WaterWaveSize = 0
+        Terrain.WaterWaveSpeed = 0
+        Terrain.WaterReflectance = 0
+        Terrain.WaterTransparency = 0
+    
+        Lighting.GlobalShadows = false
+        Lighting.FogEnd = 9e9
+    
+        for _, v in pairs(workspace:GetDescendants()) do
+            if table.find({"Weather", "RainEmitterPart", "Water", "WaterBase-Plane"}, v.Name) or v.Name:find("Texture") or v:IsA("ParticleEmitter") or v:IsA("Decal") or v:IsA("Sound") then
+                game.Debris:AddItem(v, 0)
+            end
+        end
+        for i,v in pairs(Lighting:GetDescendants()) do
+            if v:IsA("BlurEffect") or v:IsA("SunRaysEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("BloomEffect") or v:IsA("DepthOfFieldEffect") then
+                v.Enabled = false
+            end
+        end
+        workspace.DescendantAdded:Connect(function(child)
+            pcall(function()
+                if table.find({"Weather", "RainEmitterPart", "Water", "WaterBase-Plane"}, child.Name) or child.Name:find("Texture") or child:IsA("ParticleEmitter") or child:IsA("Decal") or child:IsA("Sound") then
+                    game.Debris:AddItem(child, 0)
+                end
+            end)
+        end)
+        settings().Rendering.QualityLevel = 1
+        UserSettings():GetService("UserGameSettings").MasterVolume = 0
+        settings():GetService("NetworkSettings").IncomingReplicationLag = 0
+    end)
+end
+
+local Server_Section = Tabs.Settings:AddSection("Server")
+Server_Section:AddButton({
+    Title = "Rejoin Server",
+    Description = "Rejoin Server.",
+    Callback = function()
+        TeleportService:Teleport(PlaceId, LocalPlayer)
+    end
+})
+Server_Section:AddButton({
+    Title = "Hop Server",
+    Description = "Hop Server.",
+    Callback = function()
+        Collection:_HopServer()
+    end 
+})
+-- Server_Section:AddButton({
+--     Title = "Copy Server Script",
+--     Description = "Copy Server Script.",
+--     Callback = function()
+--         setclipboard([[game:GetService('TeleportService'):TeleportToPlaceInstance(]]..game.PlaceId..[[, ']]..game.JobId..[[')]])
+--     end
+-- })
+
+SaveManager:SetLibrary(Library)
+InterfaceManager:SetLibrary(Library)
+
+SaveManager:IgnoreThemeSettings()
+
+SaveManager:SetIgnoreIndexes({})
+InterfaceManager:SetFolder("SynTax_Hub_Next_Generation")
+SaveManager:SetFolder("SynTax_Hub_Next_Generation/"..ProjectName)
+
+InterfaceManager:BuildInterfaceSection(Tabs.Settings)
+SaveManager:BuildConfigSection(Tabs.Settings)
+
+
+
+--------------------------- [[ Store_Section ]] ---------------------------
+
+
+local Vehicle_Purchase = {
+    Data = {
+        ["2018 Eclivo Quantum Nexus"] = "QuantumNexus",
+        ["2022 Rovana Racer"] = "Racer",
+        ["2021 ALR Noria"] = "C2",
+        ["2023 SSC Tuatara Striker"] = "SSC-TuataraStriker",
+        ["2021 Hennessey Venom F5"] = "F5",
+        ["2020 Exotix K70"] = "K70",
+        ["2020 SSC Tuatara"] = "SSC-Tuatara",
+        ["2002 Exotix AO"] = "AO",
+        ["2024 Devel Sixteen"] = "Devel-Sixteen",
+        ["2023 Hennessey Venom F5 Revolution"] = "Hennessey-Venom-F5-Revolution",
+        ["2025 Zenvo Aurora Agil"] = "Zenvo-AuroraAgil",
+        ["2017 Pagani Zonda HP Barchetta"] = "Pagani-ZondaHPBarchetta",
+        ["2022 Apollo Project Evo"] = "ApolloEvo",
+        ["2023 SSC Tuatara Aggressor"] = "SSC-TuataraAggressor",
+        ["2019 Pagani Zonda Revo Barchetta"] = "Pagani-ZondaRevoBarchetta"
+    },
+    List = {
+        "2018 Eclivo Quantum Nexus",
+        "2022 Rovana Racer",
+        "2021 ALR Noria",
+        "2023 SSC Tuatara Striker",
+        "2021 Hennessey Venom F5",
+        "2020 Exotix K70",
+        "2020 SSC Tuatara",
+        "2002 Exotix AO",
+        "2024 Devel Sixteen",
+        "2023 Hennessey Venom F5 Revolution",
+        "2025 Zenvo Aurora Agil",
+        "2017 Pagani Zonda HP Barchetta",
+        "2022 Apollo Project Evo",
+        "2023 SSC Tuatara Aggressor",
+        "2019 Pagani Zonda Revo Barchetta"
+    }
+}
+if SaveSettings["Selected_Car_To_Purchase"] == nil then SaveSettings["Selected_Car_To_Purchase"] = {} end
+Tabs.Store:AddDropdown("Selected_Car_To_Purchase", {
+    Title = "Select Vehicle:",
+    Values = Vehicle_Purchase.List,
+    Multi = true,
+    Default = SaveSettings["Selected_Car_To_Purchase"],
+}) Collection:Multi_Dropdown_Callback("Selected_Car_To_Purchase")
+Tabs.Store:AddToggle('Auto_Purchase_Vehicle', {Title = 'Auto Purchase Vehicle',Default = SaveSettings["Auto_Purchase_Vehicle"]}) Collection:ToggleCallback("Auto_Purchase_Vehicle")
+
+
+
+Window:SelectTab(1)
+
+Library:Notify({
+    Title = "SynTax x Lynix | Next-Generation",
+    Content = "The script has been loaded.",
+    Duration = 5
+})
+
+Library:Notify({
+    Title = "SynTax x Lynix | Next-Generation",
+    Content = "https://lynixstore.xyz/",
+    Duration = 5
+})
+
+SaveManager:LoadAutoloadConfig()
+
+-- for i,v in pairs(InterfaceManager.Settings.Theme) do
+--     print(i,v)
+-- end
+-- if InterfaceManager.Settings then
+
+-- end
+
+-- print(InterfaceManager.Settings.Theme)
+Library:SetTheme("Amethyst")
+
+
+--------------------------- [[ Main ]] ---------------------------
+
+if _G.LynIx_Toggle then
+    _G.LynIx_Toggle:Destroy()
+    _G.LynIx_Toggle = nil
+end
+
+_G.LynIx_Toggle = CoreGui.TopBarApp.TopBarFrame.LeftFrame.ChatIcon:Clone()
+_G.LynIx_Toggle.Parent = CoreGui.TopBarApp.TopBarFrame.LeftFrame
+_G.LynIx_Toggle.Name = "LynIx_Hub"
+_G.LynIx_Toggle.Background.Icon.Image = "rbxassetid://15957085964"
+
+if _G.LynIx_Toggle.BadgeContainer:FindFirstChild("Badge") then
+    _G.LynIx_Toggle.BadgeContainer:FindFirstChild("Badge"):Destroy()
+end
+
+
+local Debounce = true
+_G.LynIx_Toggle.InputBegan:Connect(function(Input)
+    if Debounce then
+        Debounce = false
+        -- Collection:Keyboard("LeftControl")
+        Library:Toggle()
+        wait(.5)
+        Debounce = true
+    end
+end)
+
+
+
+
+
+
+
+---------------------------------------------- [ #Task: Anti_Spy_Mode ] ----------------------------------------------
+local PullBackTime = 0
+FunctionTask["AutoFarm"] = function()
+    -- for i,v in pairs(Options["SelectedCar"]) do
+    --     print(i,v)
+    -- end
+
+    while true do
+        if Library.Unloaded or Collection.UnLoaded then break end
+        local Succ,Err = pcall(function()
+            if Options["AutoFarm"].Value then
+
+                -- print("CAR:",#Collection:getcarlist(), Collection:getcarlist()[1])
+
+                if LocalPlayer.PlayerGui:FindFirstChild("Loading") then
+                    ReplicatedFirst:RemoveDefaultLoadingScreen();
+                    require(ReplicatedStorage:WaitForChild("Modules"):WaitForChild("Client"):WaitForChild("ClientState")).SetState("IntroDone", true);
+                    LocalPlayer.PlayerGui:FindFirstChild("Loading"):Destroy()
+                    Status_Paragraph:SetDesc("Auto Farm | Skipping loading screen.")
+                    wait(1)
+                else
+                    if LocalPlayer.PlayerGui.MainHUD.StarterCarsNew.Visible == true then
+                        Collection:fireclickbutton(LocalPlayer.PlayerGui.MainHUD.StarterCarsNew.InnerFrame.CarList.Roadster1.SelectionCanvas.SelectionFrame.Button)
+                        wait(3)
+                        getgenv().SaveSettings["SelectedCar"] = "roadster1";
+                        Collection:Save()
+                        Status_Paragraph:SetDesc("Auto Farm | Selecting starter car. (roadster1)")
+                    else
+                        local Car_Spawn_Position = CFrame.new(getgenv().SaveSettings["SpawnPosition"].X,getgenv().SaveSettings["SpawnPosition"].Y,getgenv().SaveSettings["SpawnPosition"].Z)
+                        local CameraSubject = workspace.CurrentCamera.CameraSubject;
+                        local Humanoid = Collection:GetHum(LocalPlayer.Character)
+                        if Humanoid then -- Humanoid
+                            if not Vehicles:FindFirstChild(LocalPlayer.Name) then
+                                repeat
+                                    wait()
+                                    Status_Paragraph:SetDesc("Auto Farm | Trying to spawn the car. (Code: 1)")
+                                    if LocalPlayer.Character.Humanoid.Sit then
+                                        LocalPlayer.Character.Humanoid.Jump = true   
+                                    end
+                                    if LocalPlayer.PlayerGui.MainHUD.StarterCarsNew.Visible == true then
+                                        Collection:fireclickbutton(LocalPlayer.PlayerGui.MainHUD.StarterCarsNew.InnerFrame.CarList.Roadster1.SelectionCanvas.SelectionFrame.Button)
+                                        wait(3)
+                                        getgenv().SaveSettings["SelectedCar"] = "roadster1";
+                                        Collection:Save()
+                                    end
+                                    Collection:TeleportCFrame(Car_Spawn_Position)
+                                    wait(1)
+                                    if #Collection:getcarlist() == 1 then
+                                        -- print("MOOD 1:",Collection:getcarlist()[1])
+                                        Remotes.VehicleEvent:FireServer("Spawn", Collection:getcarlist()[1])
+                                    else
+                                        Remotes.VehicleEvent:FireServer("Spawn", Options["SelectedCar"].Value)
+                                    end
+                                    wait(math.random(1,3))
+                                until LocalPlayer.PlayerGui.MainHUD.StarterCars.Visible or Vehicles:FindFirstChild(LocalPlayer.Name) or Options["AutoFarm"].Value
+                            elseif Vehicles:FindFirstChild(LocalPlayer.Name) and not LocalPlayer.Character.Humanoid.Sit then
+                                Status_Paragraph:SetDesc("Auto Farm | Trying to spawn the car. (Code: 2)")
+                                Collection:TeleportCFrame(Car_Spawn_Position)
+                                wait(1)
+                                if #Collection:getcarlist() == 1 then
+                                    -- print("MOOD 2:",Collection:getcarlist()[1])
+                                    Remotes.VehicleEvent:FireServer("Spawn", Collection:getcarlist()[1])
+                                else
+                                    Remotes.VehicleEvent:FireServer("Spawn", Options["SelectedCar"].Value)
+                                end
+                                
+                                wait(2)
+                            else
+                                if LocalPlayer.Character.Humanoid.Sit and (LocalPlayer.Character.HumanoidRootPart.Position - Vehicles[LocalPlayer.Name].VehicleSeat.Position).Magnitude > 10 then
+                                    LocalPlayer.Character.Humanoid.Jump = true
+                                end
+                                
+                                if tick() >= PullBackTime and Vehicles:FindFirstChild(LocalPlayer.Name) then
+                                    repeat
+                                        Status_Paragraph:SetDesc("Auto Farm | Returning to start position.")
+                                        local Owned_Vehicles = Vehicles:FindFirstChild(LocalPlayer.Name)
+                                        if Owned_Vehicles then
+                                            Owned_Vehicles:SetPrimaryPartCFrame(CFrame.new(-33910.75, 34.7337952, -31661.5273, -0.894524574, 0.000113477865, -0.447018743, 9.63169659e-05, 1, 6.11159412e-05, 0.447018743, 1.16142264e-05, -0.894524574))
+                                        end
+                                        wait(0.2)
+                                    until Owned_Vehicles == nil or not Options["AutoFarm"].Value or (LocalPlayer.Character.HumanoidRootPart.Position - CFrame.new(-33910.75, 34.7337952, -31661.5273, -0.894524574, 0.000113477865, -0.447018743, 9.63169659e-05, 1, 6.11159412e-05, 0.447018743, 1.16142264e-05, -0.894524574).Position).Magnitude < 300
+                                    PullBackTime = tick() + Options["Backtostartpoint"].Value
+                                end
+                                if CameraSubject:IsA("BasePart") then
+                                    local Owned_Vehicles = Vehicles:FindFirstChild(LocalPlayer.Name)
+                                    -- print("1mill")
+
+
+                                    local Gyro = Owned_Vehicles.PlateCenter:FindFirstChildOfClass("BodyGyro") or Instance.new("BodyGyro", Owned_Vehicles.PlateCenter)
+                                    Gyro.MaxTorque = Vector3.new(8999999488, 8999999488, 8999999488)
+                                    Gyro.D = 500
+                                    Gyro.P = 5000
+                                    Gyro.CFrame = CFrame.new(-33910.75, 30.7337952, -31661.5273, -0.894524574, 0.000113477865, -0.447018743, 9.63169659e-05, 1, 6.11159412e-05, 0.447018743, 1.16142264e-05, -0.894524574)
+
+                                    local BodyVelocity = Owned_Vehicles.PlateCenter:FindFirstChildOfClass("BodyVelocity") or Instance.new("BodyVelocity", Owned_Vehicles.PlateCenter)
+                                    BodyVelocity.MaxForce = Vector3.new(8999999488, 8999999488, 8999999488)
+                                    BodyVelocity.P = 1250
+                                    BodyVelocity.Velocity = Vector3.new(SaveSettings["Boost_Car_Speed"]/2, -0.1, SaveSettings["Boost_Car_Speed"])
+                                end
+                            end
+                        end
+                    end
+                end
+            else
+                Status_Paragraph:SetDesc("None")
+                local Owned_Vehicles = Vehicles:FindFirstChild(LocalPlayer.Name)
+                                    -- print("1mill")
+                if Owned_Vehicles then
+                    local Gyro = Owned_Vehicles.PlateCenter:FindFirstChildOfClass("BodyGyro")
+                    local BodyVelocity = Owned_Vehicles.PlateCenter:FindFirstChildOfClass("BodyVelocity")
+                    if Gyro then
+                        Gyro:Destroy()
+                    end
+                    if BodyVelocity then
+                        BodyVelocity:Destroy()
+                    end
+                end
+            end
+        end)
+        if Err and Debug then
+            warn("[AutoFarm] Caught Error: ",Err)
+        end
+        task.wait()
+    end
+end
+
+---------------------------------------------- [ #Task: Anti_Spy_Mode ] ----------------------------------------------
+
+FunctionTask["Anti_Spy_Mode"] = function()
+    while true do
+        if Library.Unloaded or Collection.UnLoaded then break end
+        local Succ,Err = pcall(function()
+            if Options["Anti_Spy_Mode"].Value then
+                if #Players:GetChildren() > 1 then
+                    LocalPlayer:kick("[SynTax x Lynix] \xE0\xB8\xAD\xE0\xB8\xAD\xE0\xB8\x81\xE0\xB8\x81\xE0\xB9\x88\xE0\xB8\xAD\xE0\xB8\x99\xE0\xB8\x84\xE0\xB8\xA3\xE0\xB8\xB1\xE0\xB8\x9A\xE0\xB8\x99\xE0\xB9\x89\xE0\xB8\xAD\xE0\xB8\x87\x20\xE0\xB8\xA1\xE0\xB8\xB5\xE0\xB8\x84\xE0\xB8\x99\xE0\xB9\x80\xE0\xB8\x82\xE0\xB9\x89\xE0\xB8\xB2\xE0\xB8\xA1\xE0\xB8\xB2\x20\xE0\xB8\xA3\xE0\xB8\xB5\xE0\xB8\x9A\xE0\xB8\xAD\xE0\xB8\xAD\xE0\xB8\x81\xE0\xB8\x94\xE0\xB9\x88\xE0\xB8\xA7\xE0\xB8\x99\xE0\xB9\x86\x20\x21\x21\x21")
+                end
+            end
+        end)
+        if Err and Debug then
+            warn("[Anti_Spy_Mode] Caught Error: ",Err)
+        end
+        wait(.1)
+    end
+end
+---------------------------------------------- [ #Task: Anti_Spy_Mode ] ----------------------------------------------
+function Collection:GetEgg()
+    for i,v in pairs(workspace.Game.TheHuntTokens:GetChildren()) do
+        if v.Decoration.FloatingModel.Unbroken.Transparency == 0 then
+            return v
+        end
+    end
+    return nil
+end
+FunctionTask["Auto_Collect_Egg"] = function()
+    local Count = 1
+    while true do
+        if Library.Unloaded or Collection.UnLoaded then break end
+        local Succ,Err = pcall(function()
+            if Options["Auto_Collect_Egg"].Value then
+                local HumanoidRootPart = Collection:GetRoot(LocalPlayer.Character)
+                local EggHunt = Collection:GetEgg()
+                if EggHunt then
+                    Collection:Teleport(EggHunt.HitBox.CFrame)
+                else
+                    if Count == 1 then
+                        Count = 2
+                        Collection:Teleport(CFrame.new(18, 26, -850))
+                    else
+                        Count = 1
+                        Collection:Teleport(CFrame.new(-1322, 14, 3975))
+                    end
+                end
+            end
+        end)
+        if Err and Debug then
+            warn("[Auto_Collect_Egg] Caught Error: ",Err)
+        end
+        wait()
+    end
+end
+
+---------------------------------------------- [ #Task: Finish_High_Way ] ----------------------------------------------
+
+function Collection:WTF()
+    for i,v in pairs(workspace.Game.Races.LocalSession.Highway.Checkpoints:GetChildren()) do
+        warn(v.ring.Transparency)
+        if v.ring.Transparency == 0.6499999761581421 then
+            return v
+        end
+    end
+    return nil
+end
+
+FunctionTask["Finish_High_Way"] = function()
+    local Count = 1
+    while true do
+        if Library.Unloaded or Collection.UnLoaded then break end
+        local Succ,Err = pcall(function()
+            if Options["Finish_High_Way"].Value then
+                local p = Collection:WTF()
+                print("p",p)
+                if p then
+                    Collection:CarTeleport(p.CFrame)
+                else
+                    Collection:CarTeleport(workspace.Game.Races.LocalSession.Highway.Finish.ring.CFrame)
+                    
+                end
+                -- workspace.Game.Races.LocalSession.Highway.Checkpoints
+                -- Collection:CarTeleport(v.CFrame)
+            end
+        end)
+        if Err and Debug then
+            warn("[Finish_High_Way] Caught Error: ",Err)
+        end
+        task.wait()
+    end
+end
+
+---------------------------------------------- [ #Task: ESP_Vehicles ] ----------------------------------------------
+
+FunctionTask["ESP_Vehicles"] = function()
+    while true do
+        if Library.Unloaded or Collection.UnLoaded then break end
+        local Succ,Err = pcall(function()
+            for i,v in pairs(Vehicles:GetChildren()) do
+                if v.Name ~= LocalPlayer.Name and v:FindFirstChild("PlateCenter") then
+                    if v.PlateCenter:FindFirstChild("ESP_Billboard") then
+                        v.PlateCenter.ESP_Billboard.Enabled = Options["ESP_Vehicles"].Value
+                        v.PlateCenter.ESP_Billboard.ESP_Billboard_Text.TextStrokeTransparency = 0
+                        TragetColorRGB = "200,148,255"
+                        v.PlateCenter.ESP_Billboard.ESP_Billboard_Text.Text = [[<font color="rgb(255, 255, 255)">]] .. v.CarType.Value ..[[</font> ]] .. "\n" .. '<font color="rgb('..TragetColorRGB..')">Owner : ' .. v.Name ..'</font>'
+                    else
+                        local Billboard = Collection:New("BillboardGui",Billboard_Property)
+                        local TexT = Collection:New("TextLabel",TexT_Property)
+
+                        TexT.Parent = Billboard
+                        Billboard.Parent = v.PlateCenter
+                    end
+                end
+            end
+        end)
+        if Err and Debug then
+            warn("[ESP_Vehicles] Caught Error: ",Err)
+        end
+        wait(.1)
+    end
+end
+---------------------------------------------- [ #Task: Auto_Collect_Challenges ] ----------------------------------------------
+
+FunctionTask["Auto_Collect_Challenges"] = function()
+    while true do
+        if Library.Unloaded or Collection.UnLoaded then break end
+        local Succ,Err = pcall(function()
+            if Options["Auto_Collect_Challenges"].Value then
+                for i=1,7 do
+                    Remotes:WaitForChild("PlayRewards"):FireServer(i)
+                end
+                for i,v in pairs(LocalPlayer.PlayerGui.MainHUD.DailyChallenges.holder.Challenges.RewardsList:GetChildren()) do
+                    if v:IsA("Frame") and v.Visible then
+                        Remotes:WaitForChild("QuestClaimed"):FireServer(v.Name)
+                    end
+                end
+                 
+            end
+        end)
+        if Err and Debug then
+            warn("[Auto_Collect_Challenges] Caught Error: ",Err)
+        end
+        wait(.1)
+    end
+end
+
+---------------------------------------------- [ #Task: ESP_Players ] ----------------------------------------------
+
+FunctionTask["ESP_Players"] = function()
+    while true do
+        if Library.Unloaded or Collection.UnLoaded then break end
+        local Succ,Err = pcall(function()
+            for i,v in pairs(Players:GetChildren()) do
+                if v.Name ~= LocalPlayer.Name and v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
+                    if v.Character.HumanoidRootPart:FindFirstChild("ESP_Billboard") then
+                        v.Character.HumanoidRootPart.ESP_Billboard.Enabled = Options["ESP_Players"].Value
+                        v.Character.HumanoidRootPart.ESP_Billboard.ESP_Billboard_Text.TextStrokeTransparency = 0
+                        TragetColorRGB = "94,255,102"
+                        v.Character.HumanoidRootPart.ESP_Billboard.ESP_Billboard_Text.Text = [[<font color="rgb(255, 255, 255)">]] .. v.Name ..[[</font> ]] .. "\n" .. '<font color="rgb('..TragetColorRGB..')">Distance : ' .. math.floor(tonumber(Collection:GetSelfDistance(v.Character.HumanoidRootPart.Position))) ..'</font>'
+                    else
+                        local Billboard = Collection:New("BillboardGui",Billboard_Property)
+                        local TexT = Collection:New("TextLabel",TexT_Property)
+
+                        TexT.Parent = Billboard
+                        Billboard.Parent = v.Character.HumanoidRootPart
+                    end
+                end
+            end
+        end)
+        if Err and Debug then
+            warn("[ESP_Players] Caught Error: ",Err)
+        end
+        wait(.1)
+    end
+end
+
+---------------------------------------------- [ #Task: ESP_Players ] ----------------------------------------------
+
+FunctionTask["Auto_Purchase_Vehicle"] = function()
+    local Black_Nigga = Color3.new(0, 0, 0)
+    while true do
+        if Library.Unloaded or Collection.UnLoaded then break end
+        local Succ,Err = pcall(function()
+            if Options["Auto_Purchase_Vehicle"].Value then
+                for i,v in pairs(Options["Selected_Car_To_Purchase"].Value) do
+                    Remotes:FindFirstChild("Purchase"):InvokeServer(Vehicle_Purchase.Data[i], Black_Nigga, Black_Nigga, Black_Nigga)
+                    wait(1)
+                end
+            end
+        end)
+        if Err and Debug then
+            warn("[Auto_Purchase_Vehicle] Caught Error: ",Err)
+        end
+        wait(2)
+    end
+end
+
+---------------------------------------------- [ #Task: Hide_Username ] ----------------------------------------------
+
+FunctionTask["Hide_Username"] = function()
+    while true do
+        if Library.Unloaded or Collection.UnLoaded then break end
+        local Succ,Err = pcall(function()
+            for i,v in pairs(Players:GetChildren()) do
+                if Options["Hide_Username"].Value then
+                    LocalPlayer.PlayerGui.MainHUD.Leaderboard.localplayerstats.statList.username.Text = "Floppa345"
+                else
+                    LocalPlayer.PlayerGui.MainHUD.Leaderboard.localplayerstats.statList.username.Text = LocalPlayer.DisplayName
+                end
+            end
+        end)
+        if Err and Debug then
+            warn("[Hide_Username] Caught Error: ",Err)
+        end
+        wait(.1)
+    end
+end
+
+---------------------------------------------- [ #Task: Notify_Disconnected ] ----------------------------------------------
+
+local Last_Sended = 0
+FunctionTask["Notify_Account_Stats"] = function()
+    while true do
+        if Library.Unloaded or Collection.UnLoaded then break end
+        local Succ,Err = pcall(function()
+            if Options["Notify_Account_Stats"].Value then
+                Collection:Send_Webhook_Result(Options["Webhook_URL"].Value)
+                Last_Sended = os.time() + 3600
+                repeat wait() until os.time() >= Last_Sended or not Options["Notify_Account_Stats"].Value
+            end
+        end)
+        if Err and Debug then
+            warn("[Notify_Account_Stats] Caught Error: ",Err)
+        end
+        wait(.1)
+    end
+end
+
+---------------------------------------------- [ #Task: WalkSpeed And JumpPower ] ----------------------------------------------
+
+coroutine.wrap(function()
+    while wait(.1) do
+        if Library.Unloaded or Collection.UnLoaded then break end
+        local Succ,Err = pcall(function()
+            local Humanoid = Collection:GetHum(LocalPlayer.Character)
+            if Humanoid then
+                Humanoid.WalkSpeed = Options["WalkSpeed"].Value
+                Humanoid.JumpPower = Options["JumpPower"].Value
+            end 
+        end)
+        if Err and Debug then
+            warn("[WalkSpeed And JumpPower] Caught Error: ",Err)
+        end
+        wait(.1)
+    end
+end)()
+
+---------------------------------------------- [ White Screen ] ----------------------------------------------
+
+coroutine.wrap(function()
+    while RunService.Stepped:wait() do
+        local LogError = false
+        if Library.Unloaded or Collection.UnLoaded then return end
+        local Success , err = pcall(function()
+            if Options["Auto_Collect_Egg"].Value then
+                local Humanoid = Collection:GetHum(LocalPlayer.Character) 
+                local Root = Collection:GetRoot(LocalPlayer.Character)
+                if false then
+                    if Humanoid then
+                        setfflag("HumanoidParallelRemoveNoPhysics", "False")
+                        setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+                        Humanoid:ChangeState(11)
+                    end
+                else
+                    if not Root:FindFirstChild("KRNLONAIR") then
+                        local KRNLONAIR = Instance.new("BodyVelocity")
+                        KRNLONAIR.Parent = Root
+                        KRNLONAIR.Name = "KRNLONAIR"
+                        KRNLONAIR.MaxForce = Vector3.new(100000,100000,100000)
+                        KRNLONAIR.Velocity = Vector3.new(0,0,0)
+                    end
+                    for i, v in pairs(LocalPlayer.Character:GetDescendants()) do
+                        if v:IsA("BasePart") and v.CanCollide == true then
+                            v.CanCollide = false
+                        end
+                    end
+                end
+            elseif Collection:GetRoot(LocalPlayer.Character):FindFirstChild("KRNLONAIR") then
+                Collection:GetRoot(LocalPlayer.Character)["KRNLONAIR"]:Destroy()
+            end
+            if sethiddenproperty then
+                _sethiddenproperty(LocalPlayer, "SimulationRadius", math.huge)
+            end
+        end)
+        if err and LogError then
+            warn("CAUGHT ERROR! : " .. err)
+        end 
+    end
+end)()
+
+
+-- ---------------------------------------------- [ White Screen ] ----------------------------------------------
+
+-- if iswindowactive then
+--     coroutine.wrap(function()
+--         while RunService.Stepped:wait() do
+--             local LogError = false
+--             if Library.Unloaded then return end
+--             local Success , err = pcall(function()
+--                 -- warn("iswindowactive", iswindowactive())
+--                 if iswindowactive() then
+--                     RunService:Set3dRenderingEnabled(true)
+--                 elseif Options and Options["White_Screen"] and Options["White_Screen"].Value then
+--                     RunService:Set3dRenderingEnabled(false)
+--                 end 
+--             end)
+--             if err and LogError then
+--                 warn("CAUGHT ERROR! : " .. err)
+--             end 
+--         end
+--     end)()
+-- else
+--     UserInputService.WindowFocused:connect(function()
+--         RunService:Set3dRenderingEnabled(true)
+--     end)
+--     UserInputService.WindowFocusReleased:connect(function()
+--         if Options and Options["White_Screen"] and Options["White_Screen"].Value then
+--             RunService:Set3dRenderingEnabled(false)
+--         end
+--     end)
+-- end
+
+--------------------------- [[ RobloxPromptGui Disconnected ]] ---------------------------
+
+-- coroutine.wrap(function()
+--     repeat task.wait() until CoreGui
+--     warn("Anti Kick")
+--     local Dir = CoreGui:FindFirstChild("RobloxPromptGui"):FindFirstChild("promptOverlay")
+--     Dir.DescendantAdded:Connect(function(Err)
+--         if Err.Name == "ErrorTitle" then
+--             Err:GetPropertyChangedSignal("Text"):Connect(function()
+--                 if Err.Text:sub(0, 12) == "Disconnected" then
+--                     if LocalPlayer then
+--                         LocalPlayer:Kick("\nRejoining...")
+--                     end
+--                     task.wait(5)
+--                     TeleportService:Teleport(game.PlaceId)
+--                 end
+--             end)
+--         end
+--     end)
+-- end)()
+coroutine.wrap(function()
+    repeat task.wait() until CoreGui
+    warn("Anti AFK")
+    LocalPlayer.Idled:Connect(function()
+        local VirtualUser = game:GetService("VirtualUser")
+        VirtualUser:CaptureController()
+        VirtualUser:ClickButton2(Vector2.new())
+    end)
+    -- while true do task.wait()
+    --     pcall(function()
+    --         local Dir = CoreGui:FindFirstChild("RobloxPromptGui"):FindFirstChild("promptOverlay")
+    --         for i,v in pairs(Dir:GetDescendants()) do
+    --             if v.Name == "ErrorTitle" then
+    --                 if v.Text:sub(0, 12) == "Disconnected" then
+    --                     if LocalPlayer then
+    --                         LocalPlayer:Kick("\nRejoining...")
+    --                     end
+    --                     task.wait(5)
+    --                     TeleportService:Teleport(game.PlaceId)
+    --                 end
+    --             end
+    --         end
+    --     end)
+    --     task.wait(10)
+    -- end
+end)()
+
+
+-- coroutine.wrap(function()
+--     while true do task.wait(5)
+--         local promptOverlay = CoreGui:FindFirstChild("RobloxPromptGui"):FindFirstChild("promptOverlay")
+--         for i,v in pairs(promptOverlay:GetDescendants()) do
+--             if v.Name == "ErrorTitle" and Options and Options["Auto_Rejoin"] and Options["Auto_Rejoin"].Value then
+--                 if v.Text:sub(0, 12) == "Disconnected" then
+--                     if Options and Options["Notify_Disconnected"] and Options["Notify_Disconnected"].Value then
+--                         Collection:Send_Webhook_Disconnect(Options["Webhook_URL"].Value)      
+--                     end
+--                     task.wait(5)
+--                     TeleportService:Teleport(PlaceId)
+--                 end
+--             end
+--         end
+--     end
+-- end)()
+
+-- local Dir = CoreGui:FindFirstChild("RobloxPromptGui"):FindFirstChild("promptOverlay")
+-- Dir.DescendantAdded:Connect(function(Err)
+--     if Err.Name == "ErrorTitle" then
+--         Err:GetPropertyChangedSignal("Text"):Connect(function()
+--             if Err.Text:sub(0, 12) == "Disconnected" then
+--                 if LocalPlayer then
+--                     LocalPlayer:Kick("\nRejoining...")
+--                 end
+--                 task.wait(5)
+--                 TeleportService:Teleport(game.PlaceId)
+--             end
+--         end)
+--     end
+-- end)
+
+---------------------------------------------- [ Anti AFK ] ----------------------------------------------
+
+LocalPlayer.Idled:connect(function()
+    VirtualUser:CaptureController()
+    VirtualUser:Button1Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame) 
+    wait()
+    VirtualUser:Button1Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+
+-- local vu = game:GetService("VirtualUser")
+-- game:GetService("Players").LocalPlayer.Idled:connect(function() 
+--     vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame) 
+--     wait(1) 
+--     vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+-- end)
+
+---------------------------------------------- [ Start Task ] ----------------------------------------------
+for TaskName,TaskFunction in pairs(FunctionTask) do
+    coroutine.wrap(function()
+        repeat task.wait(1) until Options[TaskName] ~= nil and Options[TaskName].Value == true
+        TaskFunction()
+    end)()
+end IsLoaded = true
+--------------------------- [[ Loaded System ! ]] ---------------------------
+
+warn("SynTax Hub | Driving Empire (New Generation)")
+
+-- print([[
+
+-- ██      ██    ██ ███    ██ ██ ██   ██     ██   ██ ██    ██ ██████      
+-- ██       ██  ██  ████   ██ ██  ██ ██      ██   ██ ██    ██ ██   ██     
+-- ██        ████   ██ ██  ██ ██   ███       ███████ ██    ██ ██████      
+-- ██         ██    ██  ██ ██ ██  ██ ██      ██   ██ ██    ██ ██   ██     
+-- ███████    ██    ██   ████ ██ ██   ██     ██   ██  ██████  ██████      
+                                                                       
+                                                                       
+-- ]])
+
+---------------------------------------------- [ Task : Redeem Code] ----------------------------------------------
+local Code_List = {
+    [1] = "950klikes",
+    [2] = "900KLIKES",
+    [3] = "Winterfest2023",
+    [4] = "1BVisits",
+    [5] = "850kLikes",
+    [6] = "900Mil"
+}
+
+Tabs.Main:AddButton({
+    Title = "Redeem Code",
+    Description = "Redeem all codes",
+    Callback = function()
+        Window:Dialog({
+            Title = "SynTax x Lynix",
+            Content = "We will add all codes latest",
+            Buttons = {
+                {
+                    Title = "Confirm",
+                    Callback = function()
+                        for i,v in pairs(Code_List) do
+                            Remotes:WaitForChild("Code"):FireServer(v)
+                            wait(5)                          
+                        end
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled the dialog.")
+                    end
+                }
+            }
+        })
+    end
+})
